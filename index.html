@@ -22,6 +22,7 @@
                         clifford: '#da373d',
                         'primary-color': '#FFDC26',
                         'primary-black': '#111111',
+                        'primary-bg': '#FFF9F4',
 
                     }
                 }
@@ -38,6 +39,7 @@
         }
 
         .sora-font {
+            /* background-image: url(c1-assets/cat-big.png); */
             font-family: "Sora", serif;
         }
     </style>
@@ -47,11 +49,11 @@
 <body>
     <header>
         <!-- Navbar section -->
-        <nav class="sora-font md:container mx-auto">
-            <div class="navbar bg-base-100 justify-between">
+        <nav class="bg-primary-bg border md:container mx-auto">
+            <div class="navbar  justify-between sora-font md:container mx-auto">
                 <div class="">                    
                     <img src="c1-assets/logo-header.png" alt="">
-                    <h3 class="pl-2"><a class="text-[26px] ">Brows<span class="text-primary-color">4</span>Pets</a>
+                    <h3 class="pl-2"><a class="text-lg md:text-xl lg:text-[26px] ">Brows<span class="text-primary-color">4</span>Pets</a>
                     </h3>                    
                 </div>
                 <div class="dropdown">
@@ -62,12 +64,12 @@
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-primary-black">
+                    <!-- <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-primary-black absolute ">
                         <li><a>Find a pet</a></li>
                         <li><a>Breeds</a></li>
                         <li><a>Contact us</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-primary-black">
@@ -87,6 +89,23 @@
                 </div>
             </div>
         </nav>
+        <!-- Banner section -->
+         <div class="md:container  mx-auto px-3">
+            <div class="relative my-7 lg:my-[75px] pt-24 md:pt-14 lg:pt-2">
+                <div class="absolute max-w-[680px] top-0">
+                    <h1 class="adlam-display-font text-primary-black text-3xl md:text-5xl lg:text-[56px]">
+                        Pamper Your Pet, Because They Deserve the Bes
+                    </h1>
+                    <p class="text-sm lg:text-lg sora-font lg:leading-9 my-2 lg:my-4 ">
+                        Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+                    </p>
+                    <button class="px-[18px] md:px-[30px] py-[6px] md:py-[10px] text-sm md:text-xl text-primary-black bg-primary-color rounded-lg"><a href="">Find a pet</a>
+                    </button>
+                </div>
+                <img class="w-full" src="c1-assets/cat-big.png" alt="">
+            </div>
+
+         </div> 
     </header>
 </body>
 
