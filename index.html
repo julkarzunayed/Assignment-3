@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Pet</title>
+    <!-- DaisyUi links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- Custom css for tailwind v-3.4.17 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#FFDC26',
+                        'primary-black': '#111111',
+
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/b8774b79c8.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        .adlam-display-font {
+            font-family: "ADLaM Display", serif;
+        }
+
+        .sora-font {
+            font-family: "Sora", serif;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+    <header>
+        <!-- Navbar section -->
+        <nav class="sora-font md:container mx-auto">
+            <div class="navbar bg-base-100 justify-between">
+                <div class="">                    
+                    <img src="c1-assets/logo-header.png" alt="">
+                    <h3 class="pl-2"><a class="text-[26px] ">Brows<span class="text-primary-color">4</span>Pets</a>
+                    </h3>                    
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-primary-black">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-primary-black">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class=" hidden lg:flex gap-4 ">
+                    <a href=""><i class="fa-regular fa-bell text-2xl"></i></a>
+                    <a href=""><i class="fa-solid fa-magnifying-glass text-2xl"></i></a>
+                    <button class="px-[30px] py-[10px] text-xl text-primary-black bg-white border border-primary-color rounded-lg"><a href="">Register</a>
+                    </button>
+                    <button class="px-[30px] py-[10px] text-xl text-primary-black bg-primary-color rounded-lg"><a href="">Register</a>
+                    </button>
+                    <!-- <a class="btn btn-sm bg-primary-color">Register</a> -->
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
+
 </html>
