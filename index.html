@@ -22,7 +22,9 @@
                         clifford: '#da373d',
                         'primary-color': '#FFDC26',
                         'primary-black': '#111111',
+                        'secondary-black': '#000000',
                         'primary-bg': '#FFF9F4',
+                        'secondary-bg': '#F9DF8A'
 
                     }
                 }
@@ -51,10 +53,11 @@
         <!-- Navbar section -->
         <nav class="bg-primary-bg border md:container mx-auto">
             <div class="navbar  justify-between sora-font md:container mx-auto">
-                <div class="">                    
+                <div class="">
                     <img src="c1-assets/logo-header.png" alt="">
-                    <h3 class="pl-2"><a class="text-lg md:text-xl lg:text-[26px] ">Brows<span class="text-primary-color">4</span>Pets</a>
-                    </h3>                    
+                    <h3 class="pl-2"><a class="text-lg md:text-xl lg:text-[26px] ">Brows<span
+                                class="text-primary-color">4</span>Pets</a>
+                    </h3>
                 </div>
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -81,31 +84,104 @@
                 <div class=" hidden lg:flex gap-4 ">
                     <a href=""><i class="fa-regular fa-bell text-2xl"></i></a>
                     <a href=""><i class="fa-solid fa-magnifying-glass text-2xl"></i></a>
-                    <button class="px-[30px] py-[10px] text-xl text-primary-black bg-white border border-primary-color rounded-lg"><a href="">Register</a>
+                    <button
+                        class="px-[30px] py-[10px] text-xl text-primary-black bg-white border border-primary-color rounded-lg"><a
+                            href="">Register</a>
                     </button>
-                    <button class="px-[30px] py-[10px] text-xl text-primary-black bg-primary-color rounded-lg"><a href="">Register</a>
+                    <button class="px-[30px] py-[10px] text-xl text-primary-black bg-primary-color rounded-lg"><a
+                            href="">Register</a>
                     </button>
                     <!-- <a class="btn btn-sm bg-primary-color">Register</a> -->
                 </div>
             </div>
         </nav>
         <!-- Banner section -->
-         <div class="md:container  mx-auto px-3">
+        <div class="md:container  mx-auto px-3">
             <div class="relative my-7 lg:my-[75px] pt-24 md:pt-14 lg:pt-2">
                 <div class="absolute max-w-[680px] top-0">
                     <h1 class="adlam-display-font text-primary-black text-3xl md:text-5xl lg:text-[56px]">
                         Pamper Your Pet, Because They Deserve the Bes
                     </h1>
                     <p class="text-sm lg:text-lg sora-font lg:leading-9 my-2 lg:my-4 ">
-                        Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+                        Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and
+                        make tails wag with joy!
                     </p>
-                    <button class="px-[18px] md:px-[30px] py-[6px] md:py-[10px] text-sm md:text-xl text-primary-black bg-primary-color rounded-lg"><a href="">Find a pet</a>
+                    <button
+                        class="px-[18px] md:px-[30px] py-[6px] md:py-[10px] text-sm md:text-xl text-primary-black bg-primary-color rounded-lg"><a
+                            href="">Find a pet</a>
                     </button>
                 </div>
                 <img class="w-full" src="c1-assets/cat-big.png" alt="">
             </div>
 
-         </div> 
+        </div>
+        <!-- Browse my categories -->
+        <section class="adlam-display-font md:container mx-auto">
+            <!-- cards container -->
+             <h2 class="text-primary-black text-2xl md:text-3xl lg:text-4xl text-center mb-5 lg:mb-9">Browse By Categories</h2>
+            <div class="flex flex-wrap justify-center gap-4 lg:gap-7 ">
+                <!-- cards-1 -->
+                <div class="bg-secondary-bg w-[200px] rounded-xl text-center py-9 ">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full bg-white p-6">
+                            <img src="c1-assets/dog-cartoon.png">
+                        </div>
+                    </div>
+                    <h4 class="text-secondary-blck text-xl mt-6 mb-3">Dog</h4>
+                    <p class="text-secondary-blck sora-font">2 items</p>
+                </div>
+                <!-- cards-2 -->
+                <div class="bg-secondary-bg w-[200px] rounded-xl text-center py-9 ">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full bg-white p-6">
+                            <img src="c1-assets/fish-cartoon.png">
+                        </div>
+                    </div>
+                    <h4 class="text-secondary-blck text-xl mt-6 mb-3">Fish</h4>
+                    <p class="text-secondary-blck sora-font">10 items</p>
+                </div>
+                <!-- cards-3 -->
+                <div class="bg-secondary-bg w-[200px] rounded-xl text-center py-9 ">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full bg-white p-6">
+                            <img src="c1-assets/cat-cartoon.png">
+                        </div>
+                    </div>
+                    <h4 class="text-secondary-blck text-xl mt-6 mb-3">Cat</h4>
+                    <p class="text-secondary-blck sora-font">8 items</p>
+                </div>
+                <!-- cards-4 -->
+                <div class="bg-secondary-bg w-[200px] rounded-xl text-center py-9 ">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full bg-white p-6">
+                            <img src="c1-assets/bird-cartoon.png">
+                        </div>
+                    </div>
+                    <h4 class="text-secondary-blck text-xl mt-6 mb-3">Birds</h4>
+                    <p class="text-secondary-blck sora-font">2 items</p>
+                </div>
+                <!-- cards-5 -->
+                <div class="bg-secondary-bg w-[200px] rounded-xl text-center py-9 ">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full bg-white p-6">
+                            <img src="c1-assets/mouse-cartoon.png">
+                        </div>
+                    </div>
+                    <h4 class="text-secondary-blck text-xl mt-6 mb-3">Small pet</h4>
+                    <p class="text-secondary-blck sora-font">5 items</p>
+                </div>
+                <!-- cards-6 -->
+                <div class="bg-secondary-bg w-[200px] rounded-xl text-center py-9 ">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full bg-white p-6">
+                            <img src="c1-assets/rabbit-cartoon.png">
+                        </div>
+                    </div>
+                    <h4 class="text-secondary-blck text-xl mt-6 mb-3">Rabit</h4>
+                    <p class="text-secondary-blck sora-font">1 items</p>
+                </div>
+            </div>
+        </section>
     </header>
 </body>
 
