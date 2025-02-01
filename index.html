@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Pet</title>
+
     <!-- DaisyUi links -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,9 +33,30 @@
     </script>
     <!-- Font Awesome link -->
     <script src="https://kit.fontawesome.com/b8774b79c8.js" crossorigin="anonymous"></script>
-
     <!-- Custom CSS -->
     <style>
+        .anim-bg {
+            animation: bgg 3s linear 0s infinite alternate;
+        }
+
+        @keyframes bgg {
+            0% {
+                background-color: #ff9a26;
+
+            }
+
+            50% {
+                background-color: #FFDC26;
+                transform: scale(1.1);
+                border: solid 1px aqua;
+                box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.747);
+            }
+
+            100% {
+                background-color: #f1ff26;
+            }
+        }
+
         .adlam-display-font {
             font-family: "ADLaM Display", serif;
         }
@@ -45,7 +66,7 @@
             font-family: "Sora", serif;
         }
     </style>
-
+    <title>My Pet</title>
 </head>
 
 <body>
@@ -56,7 +77,7 @@
                 <div class="">
                     <img src="c1-assets/logo-header.png" alt="">
                     <h3 class="pl-2"><a class="text-lg md:text-xl lg:text-[26px] ">Brows<span
-                                class="text-primary-color">4</span>Pets</a>
+                                class="text-primary-color ">4</span>Pets</a>
                     </h3>
                 </div>
                 <div class="dropdown">
@@ -85,8 +106,8 @@
                     <a href=""><i class="fa-regular fa-bell text-2xl"></i></a>
                     <a href=""><i class="fa-solid fa-magnifying-glass text-2xl"></i></a>
                     <button
-                        class="px-[30px] py-[10px] text-xl text-primary-black border border-primary-color rounded-lg"><a
-                            href="">Register</a>
+                        class="px-[30px] py-[10px] text-xl text-primary-black border border-primary-color rounded-lg "><a
+                            href="">Login</a>
                     </button>
                     <button class="px-[30px] py-[10px] text-xl text-primary-black bg-primary-color rounded-lg"><a
                             href="">Register</a>
@@ -96,7 +117,7 @@
             </div>
         </nav>
         <!-- Banner section -->
-        <div class="md:container  mx-auto px-3">
+        <div class="background md:container  mx-auto px-3 relative">
             <div class="relative my-7 lg:my-[75px] pt-24 md:pt-14 lg:pt-2">
                 <div class="absolute max-w-[680px] top-0">
                     <h1 class="adlam-display-font text-primary-black text-3xl md:text-5xl lg:text-[56px]">
@@ -107,109 +128,119 @@
                         make tails wag with joy!
                     </p>
                     <button
-                        class="px-[18px] md:px-[30px] py-[6px] md:py-[10px] text-sm md:text-xl text-primary-black bg-primary-color rounded-lg"><a
+                        class="anim-bg px-[18px] md:px-[30px] py-[6px] md:py-[10px] text-sm md:text-xl text-primary-black bg-primary-color rounded-lg"><a
                             href="">Find a pet</a>
                     </button>
                 </div>
-                <img class="w-full" src="c1-assets/cat-big.png" alt="">
+                <img class="w-full " src="c1-assets/cat-big.png" alt="">
             </div>
 
         </div>
     </header>
     <main>
         <!-- Pet house -->
-         <section class="adlam-display-font container mx-auto px-2 py-9 md:py-14 lg:py-36">
+        <section class="adlam-display-font container mx-auto px-2 py-9 md:py-14 lg:py-36">
             <h2 class="text-primary-black text-2xl md:text-3xl lg:text-4xl mb-5 lg:mb-9">
                 Take a Cattery
             </h2>
             <!-- cards container -->
             <div class="container mx-auto flex flex-wrap justify-center gap-3 md:gap-4 lg:gap-6 ">
                 <!-- card-1 -->
-                 <div class="flex w-[350px] p-3 gap-3 rounded-lg shadow-lg border">
+                <div class="flex w-[350px] p-3 gap-3 rounded-lg shadow-lg ">
                     <div class="">
                         <img class="rounded-xl w-full" src="c1-assets/house/house-1.jpg" alt="">
                     </div>
                     <div class="flex flex-col justify-center">
-                        <h5 class="text-secondary-blck text-lg">
+                        <h5 class="text-secondary-blck ">
                             Cats house
                         </h5>
                         <h2 class="text-2xl lg:text-3xl mt-1 text-secondary-black">$499.99</h2>
-                        <button class=" py-[6px] text-sm md:text-xl text-primary-black bg-primary-color rounded-md w-full"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
+                        <button
+                            class=" py-[6px] text-sm md:text-xl text-primary-black bg-primary-color rounded-md w-full"><a
+                                href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
-                 </div>
+                </div>
                 <!-- card-2 -->
-                 <div class="flex w-[350px] p-3 gap-3 rounded-lg shadow-lg border">
+                <div class="flex w-[350px] p-3 gap-3 rounded-lg shadow-lg ">
                     <div class="">
                         <img class="rounded-xl w-full" src="c1-assets/house/house-2.jpg" alt="">
                     </div>
                     <div class="flex flex-col justify-center">
-                        <h5 class="text-secondary-blck text-lg">
+                        <h5 class="text-secondary-blck ">
                             Cats house
                         </h5>
                         <h2 class="text-2xl lg:text-3xl mt-1 text-secondary-black">$499.99</h2>
-                        <button class=" py-[6px] text-sm md:text-xl text-primary-black bg-primary-color rounded-md"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
+                        <button class=" py-[6px] text-sm md:text-xl text-primary-black bg-primary-color rounded-md"><a
+                                href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
-                 </div>
+                </div>
                 <!-- card-3 -->
-                 <div class="flex w-[350px] p-3 gap-3 rounded-lg shadow-lg border">
+                <div class="flex w-[350px] p-3 gap-3 rounded-lg shadow-lg ">
                     <div class="">
                         <img class="rounded-xl w-full" src="c1-assets/house/house-3.jpg" alt="">
                     </div>
                     <div class="flex flex-col justify-center">
-                        <h5 class="text-secondary-blck text-lg">
+                        <h5 class="text-secondary-blck ">
                             Cats house
                         </h5>
                         <h2 class="text-2xl lg:text-3xl mt-1 text-secondary-black">$899.99</h2>
-                        <button class=" py-[6px] text-sm md:text-xl text-primary-black bg-primary-color rounded-md"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
+                        <button class=" py-[6px] text-sm md:text-xl text-primary-black bg-primary-color rounded-md"><a
+                                href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
-                 </div>
+                </div>
                 <!-- card-4 -->
-                 <div class=" w-[350px] p-3 gap-3 rounded-lg shadow-lg border">
+                <div class=" w-[350px] p-3 gap-3 rounded-lg shadow-lg ">
                     <div class="">
                         <img class="rounded-xl w-full" src="c1-assets/house/house-4.jpg" alt="">
                     </div>
                     <div class="flex justify-between items-center">
                         <div class="">
-                            <h5 class="text-secondary-blck text-lg">
+                            <h5 class="text-secondary-blck ">
                                 Cats house
                             </h5>
                             <h2 class="text-2xl lg:text-3xl text-secondary-black">$999.99</h2>
                         </div>
-                        <button class="px-12 py-[6px] text-sm md:text-xl text-primary-black bg-primary-color rounded-md"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
+                        <button
+                            class="px-12 py-[6px] text-sm md:text-xl text-primary-black bg-primary-color rounded-md"><a
+                                href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
-                 </div>
+                </div>
                 <!-- card-5 -->
-                 <div class=" w-[350px] p-3 gap-3 rounded-lg shadow-lg border">
+                <div class=" w-[350px] p-3 gap-3 rounded-lg shadow-lg ">
                     <div class="">
                         <img class="rounded-xl w-full" src="c1-assets/house/house-5.jpg" alt="">
                     </div>
                     <div class="flex justify-between items-center pt-2">
                         <div class="">
-                            <h5 class="text-secondary-blck text-lg">
+                            <h5 class="text-secondary-blck ">
                                 Cats house
                             </h5>
                             <h2 class="text-2xl lg:text-3xl text-secondary-black">$699.99</h2>
                         </div>
-                        <button class="px-12 py-[6px] text-sm md:text-xl text-primary-black bg-primary-color rounded-md"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
+                        <button
+                            class="px-12 py-[6px] text-sm md:text-xl text-primary-black bg-primary-color rounded-md"><a
+                                href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
-                 </div>
+                </div>
                 <!-- card-6 -->
-                 <div class=" w-[350px] p-3 gap-3 rounded-lg shadow-lg border">
+                <div class=" w-[350px] p-3 gap-3 rounded-lg shadow-lg ">
                     <div class="">
                         <img class="rounded-xl w-full" src="c1-assets/house/2149100228 (1).jpg" alt="">
                     </div>
                     <div class="flex justify-between items-center pt-2">
                         <div class="">
-                            <h5 class="text-secondary-blck  text-lg">
+                            <h5 class="text-secondary-blck  ">
                                 Cats house
                             </h5>
                             <h2 class="text-2xl lg:text-3xl text-secondary-black">$400.00</h2>
                         </div>
-                        <button class="px-12 py-[6px] text-sm md:text-xl text-primary-black bg-primary-color rounded-md"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
+                        <button
+                            class="px-12 py-[6px] text-sm md:text-xl text-primary-black bg-primary-color rounded-md"><a
+                                href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
                     </div>
-                 </div>
+                </div>
             </div>
-         </section>
+        </section>
         <!-- Browse my categories -->
         <section class="adlam-display-font md:container px-3 py-9 md:py-14 lg:py-36 mx-auto">
             <!-- cards container -->
@@ -448,24 +479,27 @@
     <footer class="sora-font px-3 pb-9 lg:pb-36 mt-96  bg-secondary-bg ">
         <div class="container mx-auto relative p-2 pt-[320px] md:pt-[410px] lg:pt-[280px]">
             <!-- Get pawsome news -->
-            <div class="flex flex-col lg:flex-row w-[calc(100%-16px)] mx-auto bg-primary-bg py-5 md:py-10 rounded-2xl absolute top-[-50%] lg:top-[-60%] " >
+            <div
+                class="flex flex-col lg:flex-row w-[calc(100%-16px)] mx-auto bg-primary-bg py-5 md:py-10 rounded-2xl absolute top-[-50%] lg:top-[-60%] ">
                 <div class="px-20 flex justify-center">
                     <img src="c1-assets/cute-pet-mid.png" alt="">
                 </div>
                 <div class="flex items-center  justify-center">
                     <div class="space-y-6 text-center lg:text-start">
-                        <h2 class="adlam-display-font text-primary-black text-2xl md:text-3xl lg:text-4xl mb-2">Get Pawsome News!</h2>
+                        <h2 class="adlam-display-font text-primary-black text-2xl md:text-3xl lg:text-4xl mb-2">Get
+                            Pawsome News!</h2>
                         <p class="max-w-[300px]">Exclusive training tips, ticks, product deals and more.</p>
                         <form action="">
-                            <input class="h-16 w-[100%] md:w-[470px] pl-5 rounded-xl " type="email" name="" id="" placeholder="Enter email">
+                            <input class="h-16 w-[100%] md:w-[470px] pl-5 rounded-xl " type="email" name="" id=""
+                                placeholder="Enter email">
                         </form>
                         <button
                             class="px-[18px] md:px-[30px] py-[6px] md:py-[10px] text-sm md:text-xl text-primary-black bg-primary-color rounded-lg"><a
-                                href="">Submit</a>
+                                href="">Subscribe</a>
                         </button>
                     </div>
                 </div>
-                
+
             </div>
             <!-- Footer Content section -->
             <div class="md:container mx-auto flex flex-col lg:flex-row flex-wrap  lg:justify-between lg:items-end">
@@ -492,10 +526,10 @@
                 <div class="my-4">
                     <h4 class="font-medium my-1">Follow Us</h4>
                     <div class="space-x-4">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-youtube"></i>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
